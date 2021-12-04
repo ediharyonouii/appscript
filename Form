@@ -1,0 +1,85 @@
+<!-- ## The html code of the form goes here -->
+<!-- ## This is included in the Index.html page using "include('Form')" function -->
+
+<form id="myForm" class="p-2 border border-light rounded bg-light" onsubmit="handleFormSubmit(this)"> <!-- Call JavaScript function "handleFormSubmit" -->
+    <p class="h4 mb-4 text-center">Detail Pendaftar Wisuda</p>
+    <div id="message"></div>
+    <input type="text" id="RecId" name="RecId" value="" style="display: none">
+	<div class="form-group">
+		<label for="name" >Name</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<p>Program Studi</p>
+
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S2 Informatika" value="S2 Informatika">
+				<label class="form-check-label" for="S2 Informatika">S2 Informatika</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S2 Teknik Industri" value="S2 Teknik Industri">
+				<label class="form-check-label" for="S2 Teknik Industri">S2 Teknik Industri</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Teknik Kimia" value="S1 Teknik Kimia">
+				<label class="form-check-label" for="S1 Teknik Kimia">S1 Teknik Kimia</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Teknik Industri" value="S1 Teknik Industri">
+				<label class="form-check-label" for="S1 Teknik Industri">S1 Teknik Industri</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Teknik Industri - IP" value="S1 Teknik Industri - IP">
+				<label class="form-check-label" for="S1 Teknik Industri - IP">S1 Teknik Industri - IP</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Informatika" value="S1 Informatika">
+				<label class="form-check-label" for="S1 Informatika">S1 Informatika</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Teknik Elektro" value="S1 Teknik Elektro">
+				<label class="form-check-label" for="S1 Teknik Elektro">S1 Teknik Elektro</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="prodi" id="S1 Teknik Mesin" value="S1 Teknik Mesin">
+				<label class="form-check-label" for="female">S1 Teknik Mesin</label>
+			</div>
+
+
+		</div>
+
+    	<div class="form-group">
+		<label for="tanggal_lulus" >Tanggal Lulus</label>
+		<input type="text" class="form-control" id="tanggal_lulus" name="tanggal_lulus" placeholder="tanggal_lulus" required>
+	</div>
+
+ 
+	</div>
+	<div class="form-group">
+		<label for="email">Email</label>
+		<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+	</div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1">Dosen Pembimbing Tugas Akhir</label>
+        <select class="form-control" id="country" name="country">
+          <option>Dosen Pembimbing Tugas Akhir</option>
+        </select>
+      </div>
+    </div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+    <input class="btn btn-secondary" type="reset" value="Reset">
+</form>
